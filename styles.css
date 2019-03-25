@@ -1,3 +1,8 @@
+@keyframes slide{
+    0% {transform: translateX(-20%); }
+    100% {transform: translateX(120%); }
+}
+
 img{
     max-width:100%;
 	display:inline-block;
@@ -15,7 +20,43 @@ img{
 
 .heading{
     position: absolute;
-    text-align: center;
     width: 100%;
     top: 70%;
 }
+
+.container .row div .attraction{
+    transition: 1s;
+}
+
+.container .row div .attraction:hover{
+    transform: scale(1.2);
+}
+
+.container .row div .night{
+    transition: 1s;
+}
+
+.container .row div .night:hover{
+    transform: skew(-5deg);
+}
+
+header .head div .spin{
+    transition: transform 1s;
+}
+
+header .head div .spin:hover{
+    transform: rotateZ(360deg); 
+}
+
+.container .row div .night .card-body div .btn{
+    transition: 1s;
+}
+
+.container .row div .night .card-body div .btn:hover{
+    transform: scale(.8);
+}
+
+section .banner h3{
+    animation: slide 4s linear 0s infinite;   
+}
+
