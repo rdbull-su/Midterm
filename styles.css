@@ -3,6 +3,12 @@
     100% {transform: translateX(120%); }
 }
 
+@keyframes fade {
+    0% { background-color:rgb(235, 140, 179); }
+    50% { background-color: #fff; }
+    100% { background-color: rgb(105, 190, 165); }
+}
+
 img{
     max-width:100%;
 	display:inline-block;
@@ -12,6 +18,7 @@ img{
     position: relative;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .banner img{
@@ -56,7 +63,13 @@ header .head div .spin:hover{
     transform: scale(.8);
 }
 
+/*
 section .banner h3{
     animation: slide 4s linear 0s infinite;   
+} 
+*/
+
+header{
+    animation: fade 3s linear 0s infinite;
 }
 
