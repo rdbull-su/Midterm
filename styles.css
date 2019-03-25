@@ -1,0 +1,21 @@
+img{
+    max-width:100%;
+	display:inline-block;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.heading{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 70%;
+}
